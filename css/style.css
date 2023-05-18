@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca:wght@400;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6)
+    ;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color:  hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.design{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card1,.card2{
+    width: 550px;
+    height: 450px;
+}
+.card2 {
+    background-image: url(../images/image-header-desktop.jpg);
+    background-size: cover;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode:multiply ;
+}
+.card1
+{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.head-text {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.head-text h2{
+    font-size: 2.3rem;
+    margin-bottom: 27px;
+    margin-right: 10px;
+}
+.head-text h2 span
+{
+    color: hsl(277, 64%, 61%)    ;
+}
+.head-text .caption{
+    /* color: hsla(0, 0%, 100%, 0.75); */
+    line-height: 25px;
+    margin-right: 86px;
+    font-size: 0.9rem;
+}
+
+.bottom-content
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 130px;
+    margin-bottom: 20px;
+}
+.bottom-content .inside-p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.attribution{
+    position: absolute;
+    text-align: center;
+    bottom: 30px;
+    left: 40%;
+}
+.attribution a{
+    text-decoration: none;
+    font-weight: 700;
+}
+@media(max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .design{
+        flex-direction: column-reverse;
+    }
+    .container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .card2{
+        width: 350px;
+        height: 250px;
+    }
+    .card1{
+        width: 350px;
+        height: 630px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .card1 h2{
+        margin-top: 0px;
+        font-size: 2rem;
+    }
+    .head-text .heading{
+        margin-top: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .head-text{
+        padding: 0;
+        text-align: center;
+    }
+    .head-text .caption{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .caption{
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+    }
+    .bottom-content{
+        flex-direction: column;
+        margin-left: 120px;
+    }
+    .bottom-content div{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .bottom-content .inside-h2{
+        font-size: 1.5rem;
+    }
+    
+
+}
